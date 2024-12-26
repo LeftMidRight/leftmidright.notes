@@ -1,4 +1,3 @@
-site_name: MkLorum
-nav:
-  - Home: index.md
-  - About: about.md
+site_name: 传奇耐bug王
+theme:
+  name: material

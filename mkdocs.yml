@@ -1,3 +1,10 @@
 site_name: 传奇耐bug王
 theme:
   name: material
+
+plugins:
+    - search:
+        lang:
+            - en
+            - ja
+        separator: '[\s\-\.]+'

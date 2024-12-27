@@ -21,6 +21,9 @@
         <link rel="next" href="../%E5%93%88%E5%B8%8C%E8%A1%A8/">
       
       
+        <link rel="alternate" type="application/rss+xml" title="RSS feed" href="../../../feed_rss_created.xml">
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of updated content" href="../../../feed_rss_updated.xml">
+      
       <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.49">
     
@@ -229,16 +232,8 @@
   
     
     
-      
-  
-  
-    
-  
-  
-    
-    
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../" class="md-tabs__link">
+        <a href="../../" class="md-tabs__link">
           
   
     
@@ -247,9 +242,6 @@
 
         </a>
       </li>
-    
-  
-
     
   
 
@@ -654,6 +646,10 @@
     
       
         
+          
+        
+      
+        
       
     
     
@@ -671,16 +667,24 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
-            
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
   
   <span class="md-ellipsis">
     算法题
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
@@ -688,6 +692,8 @@
             算法题
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
             
               
                 
@@ -720,7 +726,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked>
         
           
           
@@ -736,14 +742,14 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_3_1">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_2">
             <span class="md-nav__icon md-icon"></span>
             代码随想录
           </label>
@@ -1017,7 +1023,7 @@
 
   <h1>链表</h1>
 
-<h3 id="203"><a href="https://leetcode.cn/problems/remove-linked-list-elements/">203. 移除链表元素</a></h3>
+<h3 id="203"><a href="https://leetcode.cn/problems/remove-linked-list-elements/">203. 移除链表元素</a><a class="headerlink" href="#203" title="Permanent link">&para;</a></h3>
 <p>通过设置一个虚拟的头结点，可以规避删除的数是链表的第一个数所需要的判断。</p>
 <p>且在链表中要删除一个结点 <span class="arithmatex">\(p\)</span> ，需要找到 <span class="arithmatex">\(p\)</span> 前面的一个结点，所以链表遍历的条件需要考虑。</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="cm">/**</span>
@@ -1047,7 +1053,7 @@
 <a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a><span class="w">    </span><span class="p">}</span>
 <a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a><span class="p">}</span>
 </code></pre></div>
-<h3 id="707"><a href="https://leetcode.cn/problems/design-linked-list/">707. 设计链表</a></h3>
+<h3 id="707"><a href="https://leetcode.cn/problems/design-linked-list/">707. 设计链表</a><a class="headerlink" href="#707" title="Permanent link">&para;</a></h3>
 <p>为了尾插法能实现 <span class="arithmatex">\(O(1)\)</span> 的时间复杂度，需要维护一个尾指针 <span class="arithmatex">\(tail\)</span> ，尾指针需要变动的时候有以下 <span class="arithmatex">\(4\)</span> 种情况</p>
 <ol>
 <li>当链表长度为 <span class="arithmatex">\(0\)</span> 时，使用头插法插入元素，此时尾指针需要指向插入的元素</li>
@@ -1146,7 +1152,7 @@
 <a id="__codelineno-1-88" name="__codelineno-1-88" href="#__codelineno-1-88"></a><span class="cm"> * obj.deleteAtIndex(index);</span>
 <a id="__codelineno-1-89" name="__codelineno-1-89" href="#__codelineno-1-89"></a><span class="cm"> */</span>
 </code></pre></div>
-<h3 id="206"><a href="https://leetcode.cn/problems/reverse-linked-list/">206. 反转链表</a></h3>
+<h3 id="206"><a href="https://leetcode.cn/problems/reverse-linked-list/">206. 反转链表</a><a class="headerlink" href="#206" title="Permanent link">&para;</a></h3>
 <p>头插法反转链表</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="cm">/**</span>
 <a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="cm"> * Definition for singly-linked list.</span>
@@ -1172,7 +1178,7 @@
 <a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a><span class="w">    </span><span class="p">}</span>
 <a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a><span class="p">}</span>
 </code></pre></div>
-<h3 id="24"><a href="https://leetcode.cn/problems/swap-nodes-in-pairs/">24. 两两交换链表中的节点</a></h3>
+<h3 id="24"><a href="https://leetcode.cn/problems/swap-nodes-in-pairs/">24. 两两交换链表中的节点</a><a class="headerlink" href="#24" title="Permanent link">&para;</a></h3>
 <p>用三个指针实现两两交换链表中的节点，分别是前后两个指针和一个用来连接交换后的指针</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="cm">/**</span>
 <a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="cm"> * Definition for singly-linked list.</span>
@@ -1214,7 +1220,7 @@
 <a id="__codelineno-3-38" name="__codelineno-3-38" href="#__codelineno-3-38"></a><span class="w">    </span><span class="p">}</span>
 <a id="__codelineno-3-39" name="__codelineno-3-39" href="#__codelineno-3-39"></a><span class="p">}</span>
 </code></pre></div>
-<h3 id="19-n"><a href="https://leetcode.cn/problems/remove-nth-node-from-end-of-list/">19. 删除链表的倒数第 N 个结点</a></h3>
+<h3 id="19-n"><a href="https://leetcode.cn/problems/remove-nth-node-from-end-of-list/">19. 删除链表的倒数第 N 个结点</a><a class="headerlink" href="#19-n" title="Permanent link">&para;</a></h3>
 <p>先求长度，建立一个虚拟的头结点，以便于删除的元素是一个位置</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="cm">/**</span>
 <a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="cm"> * Definition for singly-linked list.</span>
@@ -1246,7 +1252,7 @@
 <a id="__codelineno-4-28" name="__codelineno-4-28" href="#__codelineno-4-28"></a><span class="w">    </span><span class="p">}</span>
 <a id="__codelineno-4-29" name="__codelineno-4-29" href="#__codelineno-4-29"></a><span class="p">}</span>
 </code></pre></div>
-<h3 id="0207"><a href="https://leetcode.cn/problems/intersection-of-two-linked-lists-lcci/">面试题 02.07. 链表相交</a></h3>
+<h3 id="0207"><a href="https://leetcode.cn/problems/intersection-of-two-linked-lists-lcci/">面试题 02.07. 链表相交</a><a class="headerlink" href="#0207" title="Permanent link">&para;</a></h3>
 <p>设第一条链表的长度是 <span class="arithmatex">\(length1\)</span>，第二条链表的长度是 <span class="arithmatex">\(length2\)</span>。假设这两条链表相交与一点，设它们相交的长度为 <span class="arithmatex">\(len\)</span> ,那么相交前两条链表的各自的两段长度是 <span class="arithmatex">\(a = length1 - len\)</span> 和 <span class="arithmatex">\(b = length2 - len\)</span>。那么如何使得两个指针在遍历两条链表的时候在相交点相遇呢？</p>
 <ol>
 <li>如果 <span class="arithmatex">\(a==b\)</span> 那么两个指针会同时走到相交点上</li>

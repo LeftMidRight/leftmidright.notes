@@ -13,6 +13,8 @@ theme:
   name: material
   custom_dir: overrides
   search_index_only: true
+
+
   # palette:
   # - media: "(prefers-color-scheme: light)"
   #   scheme: default
@@ -44,12 +46,19 @@ theme:
 
 
 plugins:
+    - rss:
+        match_path: blog/posts/.* 
+        date_from_meta:
+            as_creation: date
+        categories:
+            - categories
+            - tags 
     - search:
         lang:
             - en
             - ja
         separator: '[\s\-\.]+'
-
+        
 extra:
   generator: false
 
@@ -90,6 +99,8 @@ markdown_extensions:
   - pymdownx.tilde #删除线
   - pymdownx.arithmatex: #latex支持
       generic: true
+  - toc: 
+      permalink: true
 
 extra_javascript:
   - javascripts/mathjax.js
@@ -99,7 +110,6 @@ extra_javascript:
 nav:
     - 首页: 
       - "index.md"
-
     - 计算机理论: 
       - "计算机理论/index.md"
       - 数据库: 
@@ -113,6 +123,7 @@ nav:
         - 数据链路层: "计算机理论/计算机网络/2.数据链路层.md"
 
     - 算法题:
+      - "./算法题/index.md"
       - 代码随想录:
         - "./算法题/代码随想录/index.md"
         - 数组: "./算法题/代码随想录/数组.md"

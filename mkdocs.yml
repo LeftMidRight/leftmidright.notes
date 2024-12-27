@@ -3,7 +3,7 @@ site_name: 传奇耐bug王
 
 site_description: 笔记
 site_author: 左宗右
-site_url: http://127.0.0.1:8000/
+site_url: https://leftmidright.cn/notes
 repo_url: https://github.com/LeftMidRight/notes.git
 repo_name: LeftMidRight/notes
 
@@ -11,6 +11,7 @@ copyright: Copyright &copy; LeftMidRight
 
 theme:
   name: material
+  custom_dir: overrides
   search_index_only: true
   # palette:
   # - media: "(prefers-color-scheme: light)"
@@ -50,7 +51,7 @@ plugins:
         separator: '[\s\-\.]+'
 
 extra:
-  disqus: <shortname>
+  generator: false
 
 # icon:
 #     admonition:
@@ -87,7 +88,13 @@ markdown_extensions:
   - pymdownx.caret #下划线
   - pymdownx.mark #文本高亮
   - pymdownx.tilde #删除线
+  - pymdownx.arithmatex: #latex支持
+      generic: true
 
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 nav:
     - 首页: 
@@ -104,3 +111,11 @@ nav:
         - 概述: "计算机理论/计算机网络/0.概述.md"
         - 物理层: "计算机理论/计算机网络/1.物理层.md"
         - 数据链路层: "计算机理论/计算机网络/2.数据链路层.md"
+
+    - 算法题:
+      - 代码随想录:
+        - "./算法题/代码随想录/index.md"
+        - 数组: "./算法题/代码随想录/数组.md"
+        - 链表: "./算法题/代码随想录/链表.md"
+        - 哈希表: "./算法题/代码随想录/哈希表.md"
+      

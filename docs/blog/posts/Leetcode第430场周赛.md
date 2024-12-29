@@ -8,6 +8,8 @@ comments: true
 
 # LeetCode Contest 430
 
+>读个书怎么这么多事啊，真复习不过来了卧槽
+
 期末复习还能偷摸打一把。经典两题选手，我啥时候能上 knight 啊！
 <!-- more -->
 

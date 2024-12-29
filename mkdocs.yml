@@ -53,7 +53,7 @@ plugins:
         separator: '[\s\-\.]+'
     - blog:
         blog_dir: blog
-        blog_toc: true
+        post_dir: "{blog}/posts"
         archive: true
         categories: true
         pagination: true
@@ -110,28 +110,28 @@ extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
-# nav:
-#     - 首页: 
-#       - "index.md"
-#     - blog:
-#       - "blog/index.md"
-#     - 计算机理论: 
-#       - "计算机理论/index.md"
-#       - 数据库: 
-#         - "计算机理论/数据库/index.md"
-#         - 概述: "计算机理论/数据库/0.概述.md"
+nav:
+    - 首页: 
+      - "index.md"
+    - blog:
+      - "blog/index.md"
+    - 计算机理论: 
+      - "计算机理论/index.md"
+      - 数据库: 
+        - "计算机理论/数据库/index.md"
+        - 概述: "计算机理论/数据库/0.概述.md"
           
-#       - 计算机网络: 
-#         - "./计算机理论/计算机网络/index.md"
-#         - 概述: "计算机理论/计算机网络/0.概述.md"
-#         - 物理层: "计算机理论/计算机网络/1.物理层.md"
-#         - 数据链路层: "计算机理论/计算机网络/2.数据链路层.md"
+      - 计算机网络: 
+        - "./计算机理论/计算机网络/index.md"
+        - 概述: "计算机理论/计算机网络/0.概述.md"
+        - 物理层: "计算机理论/计算机网络/1.物理层.md"
+        - 数据链路层: "计算机理论/计算机网络/2.数据链路层.md"
 
-#     - 算法题:
-#       - "./算法题/index.md"
-#       - 代码随想录:
-#         - "./算法题/代码随想录/index.md"
-#         - 数组: "./算法题/代码随想录/数组.md"
-#         - 链表: "./算法题/代码随想录/链表.md"
-#         - 哈希表: "./算法题/代码随想录/哈希表.md"
+    - 算法:
+      - "./算法题/index.md"
+      - 代码随想录:
+        - "./算法题/代码随想录/index.md"
+        - 数组: "./算法题/代码随想录/数组.md"
+        - 链表: "./算法题/代码随想录/链表.md"
+        - 哈希表: "./算法题/代码随想录/哈希表.md"
       

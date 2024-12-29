@@ -1,9 +1,9 @@
 ---
-draft: true 
-date: 2022-01-31 
+title: "第一篇博客"
+date: 2024-12-28 
 categories:
-  - Hello
-  - World
+  - Test
+  
 ---
 
 ## test

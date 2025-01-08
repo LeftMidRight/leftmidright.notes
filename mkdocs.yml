@@ -54,7 +54,10 @@ plugins:
     - blog:
         blog_dir: blog
         post_dir: "{blog}/posts"
+<<<<<<< HEAD
         #blog_toc: true
+=======
+>>>>>>> 51a60a173cd951fca4a244a16c2d0bc3a16d4042
         archive: true
         categories: true
         pagination: true
@@ -128,7 +131,11 @@ nav:
         - 物理层: "计算机理论/计算机网络/1.物理层.md"
         - 数据链路层: "计算机理论/计算机网络/2.数据链路层.md"
 
+<<<<<<< HEAD
     - 算法题:
+=======
+    - 算法:
+>>>>>>> 51a60a173cd951fca4a244a16c2d0bc3a16d4042
       - "./算法题/index.md"
       - 代码随想录:
         - "./算法题/代码随想录/index.md"

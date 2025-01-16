@@ -8,8 +8,8 @@ comments: true
     <img src="./images/head.jpg" alt="LeftMidRight" width=20% height=20%>
 </div>
 
-!!! note "介绍"
-    23岁，是学生。想成为高手。曾获称号：传奇耐bug王
+!!! note "Introduction"
+    23岁，是学生。想成为高手。<br>曾在一道题目上连续 WA 196 次，获得称号：传奇耐bug王。
 
 >百年博客
 

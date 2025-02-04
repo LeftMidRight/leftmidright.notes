@@ -18,6 +18,8 @@
         <link rel="prev" href="../leetcode-contest-432/">
       
       
+        <link rel="next" href="../leetcode-contest-434/">
+      
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.49">
@@ -253,7 +255,7 @@
   
     
   
-  算法
+  算法题
 
         </a>
       </li>
@@ -446,6 +448,8 @@
       
         
       
+        
+      
     
     
       
@@ -523,6 +527,29 @@
 
               
             
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../archive/2022/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2022
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -539,6 +566,8 @@
   
     
     
+      
+        
       
         
       
@@ -587,6 +616,29 @@
   
   <span class="md-ellipsis">
     LeetCode周赛
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../category/%E6%95%B0%E5%AD%A6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    数学
   </span>
   
 
@@ -773,6 +825,8 @@
       
         
       
+        
+      
     
     
       
@@ -826,6 +880,27 @@
   
   <span class="md-ellipsis">
     1.计算机网络和因特网
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%90%86%E8%AE%BA/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/1.%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%92%8C%E5%9B%A0%E7%89%B9%E7%BD%91%E9%A2%98%E7%9B%AE/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.1.计算机网络和因特网题目
   </span>
   
 
@@ -926,7 +1001,7 @@
               
   
   <span class="md-ellipsis">
-    算法
+    算法题
   </span>
   
 
@@ -942,7 +1017,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
-            算法
+            算法题
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1235,8 +1310,8 @@
 <a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="p">}</span>
 </code></pre></div>
 <h2 id="t2-3424">T2 <a href="https://leetcode.cn/problems/minimum-cost-to-make-arrays-identical/?slug=maximum-difference-between-adjacent-elements-in-a-circular-array&amp;region=local_v2">3424. 将数组变相同的最小代价</a><a class="headerlink" href="#t2-3424" title="Permanent link">&para;</a></h2>
-<p>第二题做的时候还是比较不确定的，比赛的时候是按照贪心的想法来猜的。可以知道重新排列可以划分成每个子数组只包含一个数，即重新排列没有限制，可以花费 <span class="arithmatex">\(k\)</span> 的代价对数组进行任意的摆放。那么我想的就是把每个数摆放到与它差值最小的数的位置上去，这样每个数的差值的绝对值都小，最后得到的差值的总和也最小。
-从0x3f那看的交换论证法可以在这里使用，即对于 <span class="arithmatex">\(brr\)</span> 中的每个数，若 <span class="arithmatex">\(arr\)</span> 不把与其差值最小的数放到对应的位置上，那么得到的差值一定比之前的大，所以按照原思路贪心是对的。</p>
+<p>第二题做的时候还是比较不确定的，比赛的时候是按照贪心的想法来猜的。可以知道重新排列可以划分成每个子数组只包含一个数，即重新排列没有限制，可以花费 <span class="arithmatex">\(k\)</span> 的代价对数组进行任意的摆放。那么我想的就是把每个数摆放到与它差值最小的数的位置上去，这样每个数的差值的绝对值都小，最后得到的差值的总和也最小。</p>
+<p>从0x3f那看的交换论证法可以在这里使用，即对于 <span class="arithmatex">\(brr\)</span> 中的每个数，若 <span class="arithmatex">\(arr\)</span> 不把与其差值最小的数放到对应的位置上，那么得到的差值一定比之前的大，所以按照原思路贪心是对的。</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.*</span><span class="p">;</span>
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="kd">class</span> <span class="nc">Solution</span><span class="w"> </span><span class="p">{</span>
 <a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="nf">minCost</span><span class="p">(</span><span class="kt">int</span><span class="o">[]</span><span class="w"> </span><span class="n">arr</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="o">[]</span><span class="w"> </span><span class="n">brr</span><span class="p">,</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">k</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>

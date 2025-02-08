@@ -2,12 +2,12 @@
 
 
 !!! abstract 
-    学习计算机软硬件理论的笔记和心得
+    学习计算机软硬件理论笔记
 
 
 <div class="grid cards" markdown>
 
--   __Computer Science__
+-   **计算机理论**
 
     ---
     - [计算机网络](计算机网络/index.md)

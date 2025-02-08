@@ -19,7 +19,7 @@ theme:
   favicon: images/codeFavicon.png
   font: false
   features:
-  - navigation.instant # 点击内部链接时，不用全部刷新页面
+  #- navigation.instant # 点击内部链接时，不用全部刷新页面
   - navigation.tracking # 在url中使用标题定位锚点
   - navigation.tabs # 顶部显示导航顶层nav（也就是第一个节点）
   #- navigation.tabs.sticky # 滚动是隐藏顶部nav，需要配合navigation.tabs使用

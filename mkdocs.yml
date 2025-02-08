@@ -18,6 +18,10 @@ theme:
   logo: images/head.jpg
   favicon: images/codeFavicon.png
   font: false
+  # palette:
+  #   primary: 'indigo'
+  #   accent: 'pink'
+
   features:
   #- navigation.instant # 点击内部链接时，不用全部刷新页面
   - navigation.tracking # 在url中使用标题定位锚点
@@ -86,6 +90,8 @@ extra_javascript:
   - javascripts/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js
+
 
 extra_css:
   - assets/stylesheets/extra.css

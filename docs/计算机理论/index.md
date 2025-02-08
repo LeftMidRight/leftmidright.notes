@@ -2,7 +2,7 @@
 
 
 !!! abstract 
-    记录学习计算机软硬件理论的笔记和心得
+    学习计算机软硬件理论的笔记和心得
 
 
 <div class="grid cards" markdown>

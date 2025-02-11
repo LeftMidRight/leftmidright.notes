@@ -16,7 +16,7 @@ theme:
   custom_dir: overrides
   search_index_only: true
   logo: images/head.jpg
-  favicon: images/codeFavicon.png
+  favicon: images/notebook.png
   font: false
   # palette:
   #   primary: 'indigo'

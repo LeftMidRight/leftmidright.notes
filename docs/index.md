@@ -1,15 +1,31 @@
----
-comments: true
----
+# o(〃'▽'〃)o Hi!
 
-# 左宗右
+这里是左宗右的空间哦！
 
-<div style="text-align: center;">
-    <img src="./images/head.jpg" alt="LeftMidRight" width=20% height=20%>
+希望这里的内容越来越多，有什么好的提议请告诉我。
+
+毕竟...我太想进步了！
+
+<div class="grid cards" markdown>
+
+-  **计算机理论**
+
+    ---
+   
+    - [计算机网络](计算机理论/计算机网络/index.md)
+    - [数据库](计算机理论/数据库/index.md)
+
 </div>
 
-!!! note "Introduction"
-    23岁，是学生。想成为高手。<br>曾在一道题目上连续 WA 196 次，获得称号：传奇耐bug王。
+
+<div class="grid cards" markdown>
+
+-  **算法题单**
+
+    ---
+    - [代码随想录](算法题/代码随想录/index.md)
+
+</div>
 
 >百年博客
 

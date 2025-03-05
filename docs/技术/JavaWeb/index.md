@@ -6,4 +6,5 @@
 
     ---
     - [MySQL](MySQL.md)
+    - [JavaScript](JavaScript.md)
 </div>

@@ -18,9 +18,9 @@ theme:
   logo: images/head.jpg
   favicon: images/notebook.png
   font: false
-  # palette:
-  #   primary: 'indigo'
-  #   accent: 'pink'
+  palette:
+    primary: indigo
+    accent: blue
 
   features:
   #- navigation.instant # 点击内部链接时，不用全部刷新页面
@@ -134,6 +134,7 @@ nav:
       - JavaWeb:
         - "./技术/JavaWeb/index.md"
         - MySQL: "./技术/JavaWeb/MySQL.md"
+        - JavaScript: "./技术/JavaWeb/JavaScript.md"
 
     - 博客:
       - "blog/index.md"

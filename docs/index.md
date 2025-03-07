@@ -16,7 +16,6 @@ comments: true
     ---
    
     - [计算机网络](计算机理论/计算机网络/index.md)
-    - [数据库](计算机理论/数据库/index.md)
 
 </div>
 

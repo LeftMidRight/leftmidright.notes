@@ -2,7 +2,7 @@
 title: LeetCode Contest 439
 date: 2025-03-02
 categories:
-    - LeetCode周赛
+    - 算法比赛
 comments: true
 ---  
 

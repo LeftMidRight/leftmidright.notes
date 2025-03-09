@@ -2,7 +2,7 @@
 title: LeetCode Contest 432
 date: 2025-01-13
 categories:
-    - LeetCode周赛
+    - 算法比赛
 comments: true
 ---
 

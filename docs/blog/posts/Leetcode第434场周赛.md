@@ -2,7 +2,7 @@
 title: LeetCode Contest 434
 date: 2025-01-26
 categories:
-    - LeetCode周赛
+    - 算法比赛
 comments: true
 ---
 

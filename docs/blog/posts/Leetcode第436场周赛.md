@@ -2,7 +2,7 @@
 title: LeetCode Contest 436
 date: 2025-02-09
 categories:
-    - LeetCode周赛
+    - 算法比赛
 comments: true
 ---
 

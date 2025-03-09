@@ -2,7 +2,7 @@
 title: Leetcode biweekly Contest 148
 date: 2025-01-18
 categories:
-    - LeetCode周赛
+    - 算法比赛
 comments: true
 ---
 

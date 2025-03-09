@@ -2,7 +2,7 @@
 title: LeetCode Contest 430
 date: 2024-12-29
 categories:
-    - LeetCode周赛
+    - 算法比赛
 comments: true
 ---
 

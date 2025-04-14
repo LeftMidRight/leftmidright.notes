@@ -100,6 +100,10 @@ extra_css:
   # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-tc-webfont@1.0.0/style.css
   # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css
 nav:
+
+    - 博客:
+      - "blog/index.md"
+
     - 计算机理论: 
       - "计算机理论/index.md"
 
@@ -115,9 +119,7 @@ nav:
       #   - 概述: "计算机理论/数据库/0.概述.md"
       
 
-    
-    
-    - 算法题:
+    - 算法:
       - "./算法题/index.md"
       - 代码随想录:
         - "./算法题/代码随想录/index.md"
@@ -136,5 +138,4 @@ nav:
         - MySQL: "./技术/JavaWeb/MySQL.md"
         - JavaScript: "./技术/JavaWeb/JavaScript.md"
 
-    - 博客:
-      - "blog/index.md"
+    

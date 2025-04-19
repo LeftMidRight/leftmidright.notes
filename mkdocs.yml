@@ -15,7 +15,7 @@ theme:
   language: zh
   custom_dir: overrides
   search_index_only: true
-  logo: images/head.jpg
+  logo: images/Tatakae.jpg
   favicon: images/notebook.png
   font: false
   palette:
@@ -45,7 +45,9 @@ plugins:
         lang:
             - en
             - ja
-        separator: '[\s\-\.]+'
+            - cn
+        # separator: '[\s\-\.]+'
+        separator: '[\s\u200b\-]'
     - blog:
         blog_dir: blog
         post_dir: "{blog}/posts"
@@ -104,7 +106,7 @@ nav:
     - 博客:
       - "blog/index.md"
 
-    - 计算机理论: 
+    - 计算机: 
       - "计算机理论/index.md"
 
       - 计算机网络: 
@@ -135,7 +137,8 @@ nav:
       - "./技术/index.md"
       - JavaWeb:
         - "./技术/JavaWeb/index.md"
+        - B/S架构介绍: "./技术/JavaWeb/BS架构介绍.md"
         - MySQL: "./技术/JavaWeb/MySQL.md"
         - JavaScript: "./技术/JavaWeb/JavaScript.md"
-
+        
     

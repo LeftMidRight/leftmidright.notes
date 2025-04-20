@@ -88,7 +88,7 @@
   <nav class="md-header__inner md-grid" aria-label="页眉">
     <a href="../.." title="LeftMidRight&#39;s notes" class="md-header__button md-logo" aria-label="LeftMidRight's notes" data-md-component="logo">
       
-  <img src="../../images/head.jpg" alt="logo">
+  <img src="../../images/Tatakae.jpg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -296,7 +296,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="../.." title="LeftMidRight&#39;s notes" class="md-nav__button md-logo" aria-label="LeftMidRight's notes" data-md-component="logo">
       
-  <img src="../../images/head.jpg" alt="logo">
+  <img src="../../images/Tatakae.jpg" alt="logo">
 
     </a>
     LeftMidRight's notes
@@ -1484,7 +1484,33 @@
 <!-- more -->
 
 <h1 id="_1">背包问题<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<p>背包问题是动态规划问题中<strong>选或者不选</strong>的典型代表, 从0x3f博主视频中，可以学习到用记忆化搜索的方式思考dp问题，这样可以让我们在写递推的时候，比较容易地想到状态数组的定义。
+本文将依照 记忆化搜索 -&gt; dp数组 -&gt; dp数组优化 的方式一步步讲解背包问题。</p>
 <h2 id="1-01">1. 01背包问题<a class="headerlink" href="#1-01" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>问题描述：有 <span class="arithmatex">\(N\)</span> 件物品和一个容量是 <span class="arithmatex">\(V\)</span> 的背包。每件物品只能使用一次。第 <span class="arithmatex">\(i\)</span> 件物品的体积是 <span class="arithmatex">\(v_i\)</span>，价值是 <span class="arithmatex">\(w_i\)</span>。求解将哪些物品装入背包，可使这些物品的总体积不超过背包容量，且总价值最大。</p>
+</blockquote>
+<p>首先我们想怎么样写出一个暴力搜索，可以覆盖全部的情况然后记录最大价值呢？于是开始构造搜索函数，可以发现对于第 <span class="arithmatex">\(i\)</span> 件物品，我们要么<strong>选择它要么不选择它</strong>，选取这二者的最大值，根据这两种情况得到搜索的方向，可以得到搜索函数：</p>
+<div class="arithmatex">\[
+dfs(i, j) = 
+\begin{cases}
+dfs(i-1,j) &amp; \text{if } j &lt; v[i] \\ \\
+\max (dfs(i-1,j), dfs(i-1,j-v[i])+w[i]) &amp; \text{if } j \ge[i]
+\end{cases}
+\]</div>
+<p><span class="arithmatex">\(i\)</span> 代表第 <span class="arithmatex">\(i\)</span> 个物品，<span class="arithmatex">\(j\)</span> 代表当前背包的体积，<span class="arithmatex">\(dfs(i,j)\)</span> 代表从前 <span class="arithmatex">\(i\)</span> 个物品中选，选出体积为 <span class="arithmatex">\(j\)</span> 的物品的最大价值。</p>
+<p>可以知道搜索函数的代码：
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kd">public</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">dfs</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">j</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">ans</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dfs</span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">j</span><span class="p">);</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="n">j</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="n">v</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">        </span><span class="n">ans</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Math</span><span class="p">.</span><span class="na">max</span><span class="p">(</span><span class="n">ans</span><span class="p">,</span><span class="w"> </span><span class="n">dfs</span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">v</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">w</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="p">);</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">ans</span><span class="p">;</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="p">}</span>
+</code></pre></div></p>
 <h2 id="2">2. 完全背包问题<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
 <h2 id="3">3. 多重背包问题<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
 <h2 id="4">4. 分组背包问题<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>

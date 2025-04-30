@@ -1,9 +1,13 @@
-# 刷算法题笔记
+# 算法
 
-<div class="grid cards" markdown>
+## Table of Contents
 
--   **算法题单**
+### 数据结构
 
-    ---
-    - [代码随想录](代码随想录/index.md)
-</div>
+- 
+
+---
+
+### 代码随想录
+
+- [数组](代码随想录\数组.md)

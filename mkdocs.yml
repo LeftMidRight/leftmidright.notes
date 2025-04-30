@@ -23,30 +23,34 @@ theme:
     accent: blue
 
   features:
-  # - navigation.instant # 点击内部链接时，不用全部刷新页面
-  # - navigation.tracking # 在url中使用标题定位锚点
-  - navigation.tabs # 顶部显示导航顶层nav（也就是第一个节点）
-  #- navigation.tabs.sticky # 滚动是隐藏顶部nav，需要配合navigation.tabs使用
-  #- navigation.sections # nav节点缩进
-  # - navigation.expand # 不折叠左侧nav节点
-  - navigation.indexes # 指定节点index pages ，跟instant不兼容
-  #- toc.integrate # 右侧生产目录 
-  #- toc.integrate #导航集成
-  #- navigation.top # 一键回顶部
-  #- header.autohide
-  - search.share # 搜索分享
-  - search.suggest # 搜索建议
-  - search.highlight #搜索高亮
+    - navigation.tabs # 顶部显示导航顶层nav（也就是第一个节点）
+    - navigation.indexes # 指定节点index pages ，跟instant不兼容
+    - search.share # 搜索分享
+    - search.suggest # 搜索建议
+    - search.highlight #搜索高亮
+
+    - content.code.annotate
+    - content.code.select
+    - content.code.copy
+    # - navigation.tracking
+    # - navigation.tabs
+    # - navigation.top
+    - header.autohide
+    # - navigation.footer
 
 
 
 plugins:
+    - rss
     - search:
         lang:
             - en
             - ja
         separator: '[\s\-\.]+'
         # separator: '[\s\u200b\-]'
+    # - toc:
+    #     enabled: true
+    #     ignore_commits: []
     - blog:
         blog_dir: blog
         post_dir: "{blog}/posts"
@@ -86,6 +90,8 @@ markdown_extensions:
       generic: true
   - toc: 
       permalink: true
+      toc_depth: 3
+  
 
 extra_javascript:
   - javascripts/mathjax.js
@@ -93,7 +99,9 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js
   - assets/js/fix-anchor-scroll.js
-
+  - assets/js/katex.js
+  - assets/js/toc.js
+  #- assets/js/scheme.js
 
 extra_css:
   - assets/stylesheets/extra.css
@@ -101,20 +109,33 @@ extra_css:
   # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-lite-webfont@1.1.0/style.css
   # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-tc-webfont@1.0.0/style.css
   # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css
-nav:
+  - assets/stylesheets/admonition.css
+  - assets/stylesheets/card.css
+  #- assets/stylesheets/counter.css
+  - assets/stylesheets/custom.css
+  - assets/stylesheets/flink.css
+  - assets/stylesheets/fold_toc.css
+  #- assets/stylesheets/imagecontainer.css
+  #- assets/stylesheets/index.css
+  - assets/stylesheets/search.css
+  - assets/stylesheets/table.css
+  #- assets/stylesheets/tasklist.css
+  - assets/stylesheets/toc_extra.css
 
+
+nav:
     - 博客:
-      - "blog/index.md"
+      - blog/index.md
 
     - 计算机: 
-      - "计算机理论/index.md"
+      - 计算机理论/index.md
 
       - 计算机网络: 
-        - "./计算机理论/计算机网络/index.md"
-        - 1.计算机网络和因特网: "计算机理论/计算机网络/1.计算机网络和因特网.md"
-        - 1.1.计算机网络和因特网题目: "计算机理论/计算机网络/1.计算机网络和因特网题目.md"
-        - 2.应用层: "计算机理论/计算机网络/2.应用层.md"
-        - 3.运输层: "计算机理论/计算机网络/3.运输层.md"
+        - 计算机理论/计算机网络/index.md
+        - 1.计算机网络和因特网: 计算机理论/计算机网络/1.计算机网络和因特网.md
+        - 1.1.计算机网络和因特网题目: 计算机理论/计算机网络/1.计算机网络和因特网题目.md
+        - 2.应用层: 计算机理论/计算机网络/2.应用层.md
+        - 3.运输层: 计算机理论/计算机网络/3.运输层.md
       
       # - 数据库: 
       #   - "计算机理论/数据库/index.md"
@@ -122,23 +143,23 @@ nav:
       
 
     - 算法:
-      - "./算法题/index.md"
+      - 算法题/index.md
       - 代码随想录:
-        - "./算法题/代码随想录/index.md"
-        - 数组: "./算法题/代码随想录/数组.md"
-        - 链表: "./算法题/代码随想录/链表.md"
-        - 哈希表: "./算法题/代码随想录/哈希表.md"
-        - 字符串: "./算法题/代码随想录/字符串.md"
-        - 栈与队列: "./算法题/代码随想录/栈与队列.md"
-        - 二叉树: "./算法题/代码随想录/二叉树.md"
+        - 算法题/代码随想录/index.md
+        - 数组: 算法题/代码随想录/数组.md
+        - 链表: 算法题/代码随想录/链表.md
+        - 哈希表: 算法题/代码随想录/哈希表.md
+        - 字符串: 算法题/代码随想录/字符串.md
+        - 栈与队列: 算法题/代码随想录/栈与队列.md
+        - 二叉树: 算法题/代码随想录/二叉树.md
 
 
     - 技术:
-      - "./技术/index.md"
+      - 技术/index.md
       - JavaWeb:
-        - "./技术/JavaWeb/index.md"
-        - B/S架构介绍: "./技术/JavaWeb/BS架构介绍.md"
-        - MySQL: "./技术/JavaWeb/MySQL.md"
-        - JavaScript: "./技术/JavaWeb/JavaScript.md"
+        - 技术/JavaWeb/index.md
+        - B/S架构介绍: 技术/JavaWeb/BS架构介绍.md
+        - MySQL: 技术/JavaWeb/MySQL.md
+        - JavaScript: 技术/JavaWeb/JavaScript.md
         
     

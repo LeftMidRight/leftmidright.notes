@@ -17,7 +17,9 @@ theme:
   search_index_only: true
   logo: images/Tatakae.jpg
   favicon: images/notebook.png
-  font: false
+  font:
+    text: JetBrains Mono
+    code: JetBrains Mono
   palette:
     - scheme: default
   icon:
@@ -114,10 +116,10 @@ extra_javascript:
   #- assets/js/scheme.js
 
 extra_css:
-  - assets/stylesheets/extra.css
+  # - assets/stylesheets/extra.css
   - https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css
-  # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-lite-webfont@1.1.0/style.css
-  # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-tc-webfont@1.0.0/style.css
+  - https://cdn.jsdelivr.net/npm/lxgw-wenkai-lite-webfont@1.1.0/style.css
+  - https://cdn.jsdelivr.net/npm/lxgw-wenkai-tc-webfont@1.0.0/style.css
   # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css
   #- assets/stylesheets/admonition.css
   - assets/stylesheets/card.css

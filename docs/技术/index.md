@@ -1,9 +1,8 @@
-# 学技术
+# 开发
 
-<div class="grid cards" markdown>
-
--   **JavaWeb**
-
-    ---
-    - [JavaWeb](JavaWeb/index.md)
-</div>
+{{ BEGIN_TOC }}
+- 语言:
+  - JavaSE: JavaSE/
+- Web: 
+  - JavaWeb: JavaWeb/
+{{ END_TOC }}

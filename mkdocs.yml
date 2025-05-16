@@ -1,14 +1,14 @@
 # mkdocs.yml 路径是相对于 docs 目录的，而不是 mkdocs.yml
-site_name: LeftMidRight's notes
+site_name: Dpeng's notes
 
 
 site_description: 笔记
-site_author: 左宗右
+site_author: Dpeng
 site_url: https://leftmidright.cn
 repo_url: https://github.com/LeftMidRight/leftmidright.github.io
-repo_name: LeftMidRight/notes
+repo_name: Dpeng/notes
 
-copyright: Copyright &copy; LeftMidRight
+copyright: Copyright &copy; Dpeng
 
 theme:
   name: material
@@ -100,9 +100,9 @@ markdown_extensions:
   - toc: 
       permalink: true
       toc_depth: 3
-  # - pymdownx.emoji:
-  #     emoji_index: !!python/name:materialx.emoji.twemoji
-  #     emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
   
 
 extra_javascript:

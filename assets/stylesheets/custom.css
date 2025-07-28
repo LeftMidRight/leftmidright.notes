@@ -247,7 +247,7 @@ input#mkdocs-content-password {
 }
 
 strong {
-  color:#f25454
+  color: var(--md-default-fg-color);
 }
 
 a.markdown-link {

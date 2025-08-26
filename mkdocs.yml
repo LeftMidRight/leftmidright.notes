@@ -59,7 +59,8 @@ plugins:
         separator: '[\s\-\.]+'
         # separator: '[\s\u200b\-]'
     - toc:
-        enabled: true
+        enabled: true   
+        
     - blog:
         blog_dir: blog
         post_dir: "{blog}/posts"
@@ -100,9 +101,9 @@ markdown_extensions:
   - toc: 
       permalink: true
       toc_depth: 3
-  - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+  # - pymdownx.emoji:
+  #     emoji_index: !!python/name:materialx.emoji.twemoji
+  #     emoji_generator: !!python/name:materialx.emoji.to_svg
   
 
 extra_javascript:
@@ -180,6 +181,11 @@ nav:
           - 贪心: 技术/算法题/代码随想录/贪心.md
           - 单调栈: 技术/算法题/代码随想录/单调栈.md
           - 图论: 技术/算法题/代码随想录/图论.md
+      - 数据库:
+        - 技术/数据库/index.md
+        - Redis:
+          - 技术/数据库/Redis/index.md
+          - 基本架构: 技术/数据库/Redis/Redis基本架构.md
           
     - 忏悔录:
       - 记录/index.md

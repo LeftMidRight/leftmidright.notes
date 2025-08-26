@@ -7,4 +7,6 @@
   - JavaWeb: JavaWeb/
 - 算法:
   - 算法题: 算法题/
+- 数据库:
+  - Redis: 数据库/Redis/
 {{ END_TOC }}
